@@ -1,0 +1,6 @@
+cmake_minimum_required (VERSION 2.8...3.21.1)
+project(pc_reservation)
+SET(CMAKE_CXX_STANDARD 11)
+include_directories(${CMAKE_SOURCE_DIR}/include)
+aux_source_directory(${CMAKE_SOURCE_DIR}/src DIR_SRC)
+add_executable(pc_reservation ${DIR_SRC})
